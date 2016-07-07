@@ -1,4 +1,4 @@
-libcork (0.15.0+ds-4) UNRELEASED; urgency=medium
+libcork (0.15.0+ds-4) unstable; urgency=medium
 
   * debian/patches:
     - Update 0001 patch, to use full debian version from changelog
@@ -20,7 +20,7 @@ libcork (0.15.0+ds-4) UNRELEASED; urgency=medium
   * debian/*.install:
     - Remove dh-exec hack on multi-arch
 
- -- Roger Shimizu <rogershimizu@gmail.com>  Sun, 19 Jun 2016 19:01:25 +0900
+ -- Roger Shimizu <rogershimizu@gmail.com>  Thu, 07 Jul 2016 11:47:13 +0200
 
 libcork (0.15.0+ds-3) unstable; urgency=medium
 
