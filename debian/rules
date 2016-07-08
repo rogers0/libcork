@@ -7,8 +7,9 @@
 export DEB_BUILD_MAINT_OPTIONS = hardening=-pie,+all
 
 override_dh_auto_install:
-	sed -i s%https://cdn.mathjax.org/mathjax/latest/MathJax.js%file:///usr/share/javascript/mathjax/MathJax.js% build/docs/old/html/*.html
-	dh_auto_install --builddirectory=build
+	sed -i s%https://cdn.mathjax.org/mathjax/latest/MathJax.js%file:///usr/share/javascript/mathjax/MathJax.js% \
+		obj-*/docs/old/html/*.html
+	dh_auto_install
 
 %:
-	dh $@ --builddirectory=build
+	dh $@
