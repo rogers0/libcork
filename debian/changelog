@@ -1,3 +1,11 @@
+libcork (0.15.0+ds-5) UNRELEASED; urgency=medium
+
+  * debian/patches:
+    - Update 0005 patch, to fix build error on ubuntu yakkety.
+      Thanks previous patch from Gianfranco Costamagna.
+
+ -- Roger Shimizu <rogershimizu@gmail.com>  Fri, 08 Jul 2016 23:55:47 +0200
+
 libcork (0.15.0+ds-4) unstable; urgency=medium
 
   * debian/patches:
