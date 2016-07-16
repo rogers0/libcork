@@ -7,3 +7,4 @@
 0007-fix-of-PATH_MAX-for-GNU-Hurd.patch
 0008-fix-a-bit-on-library-pkg-config-file.patch
 0009-update-hash-test-result-for-big-endian-64bit.patch
+0010-extend-test-timeout-of-bitset-case-to-60-seconds.patch
