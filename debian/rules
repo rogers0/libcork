@@ -6,10 +6,11 @@
 # Security Hardening
 export DEB_BUILD_MAINT_OPTIONS = hardening=-pie,+all
 
-override_dh_auto_install:
+override_dh_install:
+	rm -f obj-*/docs/old/html/.buildinfo
 	sed -i s%https://cdn.mathjax.org/mathjax/latest/MathJax.js%file:///usr/share/javascript/mathjax/MathJax.js% \
 		obj-*/docs/old/html/*.html
-	dh_auto_install
+	dh_install
 
 %:
 	dh $@

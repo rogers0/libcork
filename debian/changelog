@@ -2,6 +2,8 @@ libcork (0.15.0+ds-6) UNRELEASED; urgency=medium
 
   * debian/patches:
     - Add 0010 patch, to resolve test timeout of bitset case
+  * debian/rules:
+    - Remove tmp file for rebuild in -doc package
 
  -- Roger Shimizu <rogershimizu@gmail.com>  Sat, 16 Jul 2016 16:53:16 +0900
 
