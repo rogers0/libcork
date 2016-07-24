@@ -1,4 +1,4 @@
-libcork (0.15.0+ds-6) UNRELEASED; urgency=medium
+libcork (0.15.0+ds-6) unstable; urgency=medium
 
   * debian/patches:
     - Add 0010 patch, to resolve test timeout of bitset case
@@ -7,7 +7,7 @@ libcork (0.15.0+ds-6) UNRELEASED; urgency=medium
   * debian/source.lintian-overrides:
     - Add lintian overrides: false positive
 
- -- Roger Shimizu <rogershimizu@gmail.com>  Sat, 16 Jul 2016 16:53:16 +0900
+ -- Roger Shimizu <rogershimizu@gmail.com>  Mon, 25 Jul 2016 00:43:18 +0900
 
 libcork (0.15.0+ds-5) unstable; urgency=medium
 
