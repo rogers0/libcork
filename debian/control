@@ -13,7 +13,7 @@ Section: libdevel
 Architecture: any
 Multi-Arch: same
 Suggests: libcork-doc
-Depends: libcork15 (= ${binary:Version}), ${misc:Depends}
+Depends: libcork16 (= ${binary:Version}), ${misc:Depends}
 Description: simple, easily embeddable, cross-platform C library (development files)
  It falls roughly into the same category as glib or APR in the C world;
  the STL, POCO, or QtCore in the C++ world; or the standard libraries of any
@@ -27,7 +27,7 @@ Description: simple, easily embeddable, cross-platform C library (development fi
  .
  This package provides C header files for the libraries.
 
-Package: libcork15
+Package: libcork16
 Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends}, ${misc:Depends}
