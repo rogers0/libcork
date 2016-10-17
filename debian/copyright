@@ -1,11 +1,18 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: libcork
-Upstream-Contact: Douglas Creager <douglas.creager@redjack.com>
+Upstream-Contact: Douglas Creager <dcreager@dcreager.net>
+                  John Zachary <jzachary@jzachary.net>
+                  Greg Virgin <greg.virgin@redjack.com>
 Source: https://github.com/redjack/libcork
-Files-Excluded: .buzzy .travis.yml .travis tests/cram.py tests/COPYING.cram.txt
+Files-Excluded:
+ .buzzy
+ .travis
+ .travis.yml
+ tests/cram.py
+ tests/COPYING.cram.txt
 
 Files: *
-Copyright: 2009-2015 RedJack, LLC
+Copyright: 2009-2015, RedJack, LLC.
 License: BSD-3-clause
 
 Files: debian/*
