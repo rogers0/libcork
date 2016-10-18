@@ -1,0 +1,21 @@
+From: Roger Shimizu <rogershimizu@gmail.com>
+Date: Wed, 19 Oct 2016 01:35:46 +0900
+Subject: bump libcork version to 16.0.2
+
+---
+ src/CMakeLists.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
+index ed3e309..14ec03a 100644
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -37,7 +37,7 @@ add_c_library(
+     libcork
+     OUTPUT_NAME cork
+     PKGCONFIG_NAME libcork
+-    VERSION 16.0.1
++    VERSION 16.0.2
+     SOURCES
+         libcork/cli/commands.c
+         libcork/core/allocator.c
