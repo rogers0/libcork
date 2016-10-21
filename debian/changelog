@@ -1,3 +1,11 @@
+libcork (0.15.0+ds-9~exp1) experimental; urgency=medium
+
+  * debian/patches:
+    - Add 0013 patch to fix unaligned access issue found on sparc64 arch
+      Thanks to James Clarke <jrtc27@jrtc27.com>.
+
+ -- Roger Shimizu <rogershimizu@gmail.com>  Fri, 21 Oct 2016 20:25:41 +0900
+
 libcork (0.15.0+ds-8) unstable; urgency=medium
 
   * debian/patches:
