@@ -54,7 +54,11 @@ Package: libcork-doc
 Priority: extra
 Section: doc
 Architecture: all
-Depends: libjs-mathjax, ${misc:Depends}
+Depends:
+ libjs-jquery,
+ libjs-mathjax,
+ libjs-underscore,
+ ${misc:Depends}
 Description: simple, easily embeddable, cross-platform C library (documentation files)
  It falls roughly into the same category as glib or APR in the C world;
  the STL, POCO, or QtCore in the C++ world; or the standard libraries of any
