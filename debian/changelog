@@ -1,10 +1,10 @@
-libcork (0.15.0+ds-9) UNRELEASED; urgency=medium
+libcork (0.15.0+ds-9) unstable; urgency=medium
 
   * debian/control:
     - make use of libjs-jquery and libjs-underscore in Debian archive,
       and remove embedded .js libraries.
 
- -- Roger Shimizu <rogershimizu@gmail.com>  Wed, 26 Oct 2016 21:40:07 +0900
+ -- Roger Shimizu <rogershimizu@gmail.com>  Wed, 26 Oct 2016 22:12:00 +0900
 
 libcork (0.15.0+ds-9~exp1) experimental; urgency=medium
 
