@@ -1,3 +1,15 @@
+libcork (0.15.0+ds-10) UNRELEASED; urgency=medium
+
+  * debian/control:
+    - Make use of dh_sphinxdoc to calculate the dependency of js library
+    - Add Built-Using according to Bug#836248.
+  * debian/rules:
+    - Make use of dh_sphinxdoc to replace/remove libjs-sphinxdoc js libraries.
+      Mathjax related replacement is left as before since it's not included
+      in libjs-sphinxdoc, yet. See Bug#739300.
+
+ -- Roger Shimizu <rogershimizu@gmail.com>  Sat, 19 Nov 2016 16:14:25 +0900
+
 libcork (0.15.0+ds-9) unstable; urgency=medium
 
   * debian/control:

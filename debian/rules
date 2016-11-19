@@ -8,12 +8,10 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=-pie,+all
 
 override_dh_install:
 	rm -f obj-*/docs/old/html/.buildinfo
-	sed -i "s%_static/jquery.js%file:///usr/share/javascript/jquery/jquery.min.js%; \
-		s%https://cdn.mathjax.org/mathjax/latest/MathJax.js%file:///usr/share/javascript/mathjax/MathJax.js%; \
-		s%_static/underscore.js%file:///usr/share/javascript/underscore/underscore.min.js%" \
+	sed -i " \
+		s%http[s]*://cdn.mathjax.org/mathjax/latest/MathJax.js%file:///usr/share/javascript/mathjax/MathJax.js%" \
 		obj-*/docs/old/html/*.html
-	rm -f obj-*/docs/old/html/_static/jquery.js obj-*/docs/old/html/_static/underscore.js
 	dh_install
 
 %:
-	dh $@
+	dh $@ --with sphinxdoc

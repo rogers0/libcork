@@ -55,10 +55,10 @@ Priority: extra
 Section: doc
 Architecture: all
 Depends:
- libjs-jquery,
  libjs-mathjax,
- libjs-underscore,
- ${misc:Depends}
+ ${misc:Depends},
+ ${sphinxdoc:Depends}
+Built-Using: ${sphinxdoc:Built-Using}
 Description: simple, easily embeddable, cross-platform C library (documentation files)
  It falls roughly into the same category as glib or APR in the C world;
  the STL, POCO, or QtCore in the C++ world; or the standard libraries of any
