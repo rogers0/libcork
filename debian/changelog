@@ -1,4 +1,4 @@
-libcork (0.15.0+ds-10) UNRELEASED; urgency=medium
+libcork (0.15.0+ds-10) unstable; urgency=medium
 
   * debian/control:
     - Make use of dh_sphinxdoc to calculate the dependency of js library
@@ -8,7 +8,7 @@ libcork (0.15.0+ds-10) UNRELEASED; urgency=medium
       Mathjax related replacement is left as before since it's not included
       in libjs-sphinxdoc, yet. See Bug#739300.
 
- -- Roger Shimizu <rogershimizu@gmail.com>  Sat, 19 Nov 2016 16:14:25 +0900
+ -- Roger Shimizu <rogershimizu@gmail.com>  Sun, 20 Nov 2016 19:38:32 +0900
 
 libcork (0.15.0+ds-9) unstable; urgency=medium
 
