@@ -4,7 +4,7 @@
 #export DH_VERBOSE = 1
 
 # Security Hardening
-export DEB_BUILD_MAINT_OPTIONS = hardening=-pie,+all
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 override_dh_install:
 	rm -f obj-*/docs/old/html/.buildinfo
