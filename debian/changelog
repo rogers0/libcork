@@ -1,3 +1,10 @@
+libcork (0.15.0+ds-11) UNRELEASED; urgency=medium
+
+  * debian/control:
+    - Set Multi-Arch of libcork-doc as foreign
+
+ -- Roger Shimizu <rogershimizu@gmail.com>  Sun, 27 Nov 2016 11:52:16 +0900
+
 libcork (0.15.0+ds-10) unstable; urgency=medium
 
   * debian/control:

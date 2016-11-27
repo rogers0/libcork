@@ -54,6 +54,7 @@ Package: libcork-doc
 Priority: extra
 Section: doc
 Architecture: all
+Multi-Arch: foreign
 Depends:
  libjs-mathjax,
  ${misc:Depends},
