@@ -1,0 +1,28 @@
+From: Max Lv <max.c.lv@gmail.com>
+Date: Thu, 8 Dec 2016 22:02:45 +0800
+Subject: Fix upstream issue #120
+
+Issue #120: https://github.com/redjack/libcork/issues/120
+
+Patch is from:
+ - https://github.com/esdeathlove/shadowsocks-libev/commit/c995cb8998a940ac3870da1a9fa55f0e46adb6f1
+to fix:
+ - https://github.com/shadowsocks/shadowsocks-libev/issues/993
+---
+ src/libcork/ds/slice.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/src/libcork/ds/slice.c b/src/libcork/ds/slice.c
+index 68de06c..96d7232 100644
+--- a/src/libcork/ds/slice.c
++++ b/src/libcork/ds/slice.c
+@@ -163,7 +163,8 @@ cork_slice_slice(struct cork_slice *slice, size_t offset, size_t length)
+               slice->buf, slice->size,
+               offset, length);
+         */
+-        cork_slice_invalid_slice_set(slice->size, offset, length);
++        if (slice != NULL)
++            cork_slice_invalid_slice_set(slice->size, offset, length);
+         return -1;
+     }
+ }
