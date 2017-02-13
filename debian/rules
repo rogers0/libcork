@@ -5,6 +5,7 @@
 
 # Security Hardening
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_BUILD_OPTIONS = nocheck
 
 override_dh_install:
 	rm -f obj-*/docs/old/html/.buildinfo

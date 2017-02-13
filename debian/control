@@ -4,9 +4,8 @@ Maintainer: Roger Shimizu <rogershimizu@gmail.com>
 Build-Depends:
  check,
  cmake,
- debhelper (>= 10),
+ debhelper (>= 9),
  pkg-config,
- python3-cram,
  python3-sphinx
 Standards-Version: 3.9.8
 Section: libs
