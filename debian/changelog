@@ -1,3 +1,9 @@
+libcork (0.15.0+ds-11~bpo8+1) jessie-backports; urgency=medium
+
+  * Rebuild for jessie-backports.
+
+ -- Roger Shimizu <rogershimizu@gmail.com>  Fri, 30 Jun 2017 01:51:21 +0900
+
 libcork (0.15.0+ds-11) unstable; urgency=medium
 
   * debian/control:
