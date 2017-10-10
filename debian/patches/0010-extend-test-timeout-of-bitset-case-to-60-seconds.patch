@@ -17,7 +17,7 @@ index 2476b69..2ab235b 100644
  
      TCase  *tc_ds = tcase_create("bits");
 -    tcase_set_timeout(tc_ds, 20.0);
-+    tcase_set_timeout(tc_ds, 60.0);
++    tcase_set_timeout(tc_ds, 120.0);
      tcase_add_test(tc_ds, test_bitset);
      suite_add_tcase(s, tc_ds);
  
