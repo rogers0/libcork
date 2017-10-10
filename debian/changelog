@@ -1,3 +1,11 @@
+libcork (0.15.0+ds-12~exp1) UNRELEASED; urgency=medium
+
+  * debian/control:
+    - Remove extra priority, since policy claims extra is the same as
+      optional now. So all binary packages can be optional.
+
+ -- Roger Shimizu <rogershimizu@gmail.com>  Tue, 10 Oct 2017 23:22:28 +0900
+
 libcork (0.15.0+ds-11~bpo8+1) jessie-backports; urgency=medium
 
   * Rebuild for jessie-backports.
