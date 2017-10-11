@@ -1,0 +1,3 @@
+Tests: upstream-test-suite
+Depends: @builddeps@
+Restrictions: allow-stderr

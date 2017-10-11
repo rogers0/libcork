@@ -7,6 +7,8 @@ libcork (0.15.0+ds-12~exp1) UNRELEASED; urgency=medium
   * debian/patches:
     - Update patch 0010, to extend the timeout of a test, since there's
       timeout issue on i386 of reproducible build.
+  * debian/tests:
+    - Add upstream test suite for autopkgtest.
 
  -- Roger Shimizu <rogershimizu@gmail.com>  Tue, 10 Oct 2017 23:22:28 +0900
 

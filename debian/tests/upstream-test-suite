@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e
+
+dpkg-source --before-build `pwd`
+dh_auto_configure
+dh_auto_build
+dh_auto_test
