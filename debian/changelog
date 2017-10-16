@@ -3,6 +3,7 @@ libcork (0.15.0+ds-12~exp1) UNRELEASED; urgency=medium
   * debian/control:
     - Remove extra priority, since policy claims extra is the same as
       optional now. So all binary packages can be optional.
+    - Bump up Standards-Version to 4.1.1 (with adding autopkgtest below).
   * Remove debian-watch-file-should-mangle-version from lintian-overrides.
   * debian/patches:
     - Update patch 0010, to extend the timeout of a test, since there's

@@ -8,7 +8,7 @@ Build-Depends:
  pkg-config,
  python3-cram,
  python3-sphinx
-Standards-Version: 3.9.8
+Standards-Version: 4.1.1
 Section: libs
 Homepage: https://libcork.readthedocs.io
 Vcs-Git: https://github.com/rogers0/libcork.git
