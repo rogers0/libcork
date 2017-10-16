@@ -1,4 +1,4 @@
-libcork (0.15.0+ds-12~exp1) UNRELEASED; urgency=medium
+libcork (0.15.0+ds-12~exp1) experimental; urgency=medium
 
   * debian/control:
     - Remove extra priority, since policy claims extra is the same as
@@ -13,7 +13,7 @@ libcork (0.15.0+ds-12~exp1) UNRELEASED; urgency=medium
   * debian/watch:
     - Change filenamemangle to match with the filename in archive.
 
- -- Roger Shimizu <rogershimizu@gmail.com>  Tue, 10 Oct 2017 23:22:28 +0900
+ -- Roger Shimizu <rogershimizu@gmail.com>  Tue, 17 Oct 2017 01:37:36 +0900
 
 libcork (0.15.0+ds-11~bpo8+1) jessie-backports; urgency=medium
 
