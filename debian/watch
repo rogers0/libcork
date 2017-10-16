@@ -2,6 +2,6 @@ version=4
 
 opts="repack,compression=xz, \
    dversionmangle=s/\+ds\d*$//,repacksuffix=+ds, \
-   filenamemangle=s%(?:.*?)?v?(\d[\d.]*)\.tar\.gz%libcork-$1.tar.gz%" \
+   filenamemangle=s%(?:.*?)?v?(\d[\d.]*)\.tar\.gz%libcork_$1.orig.tar.gz%" \
    https://github.com/redjack/libcork/tags \
    (?:.*?/)?v?(\d[\d.]*)\.tar\.gz debian uupdate

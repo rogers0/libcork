@@ -10,6 +10,8 @@ libcork (0.15.0+ds-12~exp1) UNRELEASED; urgency=medium
       timeout issue on i386 of reproducible build.
   * debian/tests:
     - Add upstream test suite for autopkgtest.
+  * debian/watch:
+    - Change filenamemangle to match with the filename in archive.
 
  -- Roger Shimizu <rogershimizu@gmail.com>  Tue, 10 Oct 2017 23:22:28 +0900
 
