@@ -1,3 +1,11 @@
+libcork (0.15.0+ds-12~exp2) UNRELEASED; urgency=medium
+
+  * debian/rules:
+    - Support new mathjax js URL result from sphinx.
+      Old URL result is also kept for backports.
+
+ -- Roger Shimizu <rogershimizu@gmail.com>  Wed, 18 Oct 2017 22:24:58 +0900
+
 libcork (0.15.0+ds-12~exp1) experimental; urgency=medium
 
   * debian/control:
