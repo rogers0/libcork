@@ -1,3 +1,11 @@
+libcork (0.15.0+ds-12) unstable; urgency=medium
+
+  * Release to unstable.
+  * debian/patches:
+    - Refresh patches.
+
+ -- Roger Shimizu <rogershimizu@gmail.com>  Sun, 22 Oct 2017 22:16:16 +0900
+
 libcork (0.15.0+ds-12~exp3) experimental; urgency=medium
 
   * debian/libcork16.symbols:
