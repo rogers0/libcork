@@ -1,3 +1,10 @@
+libcork (0.15.0+ds-12~exp3) UNRELEASED; urgency=medium
+
+  * debian/libcork16.symbols:
+    - Add symbols file for libcork16.
+
+ -- Roger Shimizu <rogershimizu@gmail.com>  Sun, 22 Oct 2017 16:17:25 +0900
+
 libcork (0.15.0+ds-12~exp2) experimental; urgency=medium
 
   * debian/rules:
