@@ -2,5 +2,3 @@
 0002-use-python3-cram-in-system.patch
 0003-add-support-for-debian-version.patch
 0008-fix-a-bit-on-library-pkg-config-file.patch
-0011-make-version-in-soname-the-same-as-library-version.patch
-0012-bump-libcork-version-to-16.0.2.patch
