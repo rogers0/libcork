@@ -16,7 +16,9 @@ libcork.so.16 libcork16 #MINVER#
  cork_allocator@Base 0.15.0
  cork_big_hash_buffer@Base 0.15.0
  cork_bitset_clear@Base 0.15.0
+ cork_bitset_done@Base 0.15.1
  cork_bitset_free@Base 0.15.0
+ cork_bitset_init@Base 0.15.1
  cork_bitset_new@Base 0.15.0
  cork_buffer_append@Base 0.15.0
  cork_buffer_append_binary@Base 0.15.0
