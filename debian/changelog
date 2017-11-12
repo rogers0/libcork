@@ -1,3 +1,9 @@
+libcork (0.15.1+ds-1) UNRELEASED; urgency=medium
+
+  * new upstream
+
+ -- Roger Shimizu <rogershimizu@gmail.com>  Fri, 27 Oct 2017 16:22:00 +0900
+
 libcork (0.15.0+ds-12) unstable; urgency=medium
 
   * Release to unstable.
