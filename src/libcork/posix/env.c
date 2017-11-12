@@ -1,6 +1,6 @@
 /* -*- coding: utf-8 -*-
  * ----------------------------------------------------------------------
- * Copyright © 2013-2014, RedJack, LLC.
+ * Copyright © 2013, libcork authors
  * All rights reserved.
  *
  * Please see the COPYING file in this distribution for license details.
@@ -183,7 +183,7 @@ cork_env_set_vars(void *user_data, struct cork_hash_table_entry *entry)
     return CORK_HASH_TABLE_MAP_CONTINUE;
 }
 
-#if defined(__APPLE__) || (defined(BSD) && (BSD >= 199103))
+#if (defined(__APPLE__) || (defined(BSD) && (BSD >= 199103))) && !defined(__GNU__)
 /* A handful of platforms [1] don't provide clearenv(), so we must implement our
  * own version that clears the environ array directly.
  *

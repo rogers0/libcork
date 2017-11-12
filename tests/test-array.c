@@ -1,6 +1,6 @@
 /* -*- coding: utf-8 -*-
  * ----------------------------------------------------------------------
- * Copyright © 2011-2014, RedJack, LLC.
+ * Copyright © 2011, libcork authors
  * All rights reserved.
  *
  * Please see the COPYING file in this distribution for license details.
@@ -10,6 +10,7 @@
 #include <stdarg.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 #include <check.h>
 

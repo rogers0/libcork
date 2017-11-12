@@ -1,10 +1,9 @@
 /* -*- coding: utf-8 -*-
  * ----------------------------------------------------------------------
- * Copyright © 2011-2012, RedJack, LLC.
+ * Copyright © 2011, libcork authors
  * All rights reserved.
  *
- * Please see the COPYING file in this distribution for license
- * details.
+ * Please see the COPYING file in this distribution for license details.
  * ----------------------------------------------------------------------
  */
 
@@ -163,7 +162,8 @@ cork_slice_slice(struct cork_slice *slice, size_t offset, size_t length)
               slice->buf, slice->size,
               offset, length);
         */
-        cork_slice_invalid_slice_set(slice->size, offset, length);
+        if (slice != NULL)
+            cork_slice_invalid_slice_set(slice->size, offset, length);
         return -1;
     }
 }

@@ -1,10 +1,9 @@
 /* -*- coding: utf-8 -*-
  * ----------------------------------------------------------------------
- * Copyright © 2011, RedJack, LLC.
+ * Copyright © 2011, libcork authors
  * All rights reserved.
  *
- * Please see the COPYING file in this distribution for license
- * details.
+ * Please see the COPYING file in this distribution for license details.
  * ----------------------------------------------------------------------
  */
 
@@ -160,10 +159,17 @@
  */
 
 #if CORK_CONFIG_HAVE_GCC_ATTRIBUTES
+
 #define CORK_INITIALIZER(name) \
 __attribute__((constructor)) \
 static void \
 name(void)
+
+#define CORK_FINALIZER(name) \
+__attribute__((destructor)) \
+static void \
+name(void)
+
 #else
 #error "Don't know how to implement initialization functions of this platform"
 #endif

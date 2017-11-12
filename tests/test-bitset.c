@@ -1,6 +1,6 @@
 /* -*- coding: utf-8 -*-
  * ----------------------------------------------------------------------
- * Copyright © 2013-2014, RedJack, LLC.
+ * Copyright © 2013, libcork authors
  * All rights reserved.
  *
  * Please see the COPYING file in this distribution for license details.
@@ -27,19 +27,31 @@ static void
 test_bitset_of_size(size_t bit_count)
 {
     size_t  i;
-    struct cork_bitset  *set = cork_bitset_new(bit_count);
+    struct cork_bitset  *set1 = cork_bitset_new(bit_count);
+    struct cork_bitset set2;
 
     for (i = 0; i < bit_count; i++) {
-        cork_bitset_set(set, i, true);
-        fail_unless(cork_bitset_get(set, i), "Unexpected value for bit %zu", i);
+        cork_bitset_set(set1, i, true);
+        fail_unless(cork_bitset_get(set1, i), "Unexpected value for bit %zu", i);
     }
 
     for (i = 0; i < bit_count; i++) {
-        cork_bitset_set(set, i, false);
-        fail_if(cork_bitset_get(set, i), "Unexpected value for bit %zu", i);
+        cork_bitset_set(set1, i, false);
+        fail_if(cork_bitset_get(set1, i), "Unexpected value for bit %zu", i);
+    }
+    cork_bitset_free(set1);
+
+    cork_bitset_init(&set2, bit_count);
+    for (i = 0; i < bit_count; i++) {
+        cork_bitset_set(&set2, i, true);
+        fail_unless(cork_bitset_get(&set2, i), "Unexpected value for bit %zu", i);
     }
 
-    cork_bitset_free(set);
+    for (i = 0; i < bit_count; i++) {
+        cork_bitset_set(&set2, i, false);
+        fail_if(cork_bitset_get(&set2, i), "Unexpected value for bit %zu", i);
+    }
+    cork_bitset_done(&set2);
 }
 
 START_TEST(test_bitset)
@@ -79,7 +91,7 @@ test_suite()
     Suite  *s = suite_create("bits");
 
     TCase  *tc_ds = tcase_create("bits");
-    tcase_set_timeout(tc_ds, 20.0);
+    tcase_set_timeout(tc_ds, 120.0);
     tcase_add_test(tc_ds, test_bitset);
     suite_add_tcase(s, tc_ds);
 

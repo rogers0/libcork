@@ -1,6 +1,6 @@
 /* -*- coding: utf-8 -*-
  * ----------------------------------------------------------------------
- * Copyright © 2013, RedJack, LLC.
+ * Copyright © 2013, libcork authors
  * All rights reserved.
  *
  * Please see the COPYING file in this distribution for license details.
@@ -29,7 +29,13 @@ CORK_API struct cork_bitset *
 cork_bitset_new(size_t bit_count);
 
 CORK_API void
+cork_bitset_init(struct cork_bitset *set, size_t bit_count);
+
+CORK_API void
 cork_bitset_free(struct cork_bitset *set);
+
+CORK_API void
+cork_bitset_done(struct cork_bitset *set);
 
 CORK_API void
 cork_bitset_clear(struct cork_bitset *set);

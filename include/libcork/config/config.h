@@ -1,6 +1,6 @@
 /* -*- coding: utf-8 -*-
  * ----------------------------------------------------------------------
- * Copyright © 2011-2015, RedJack, LLC.
+ * Copyright © 2011, libcork authors
  * All rights reserved.
  *
  * Please see the COPYING file in this distribution for license details.
@@ -44,8 +44,8 @@
 #include <sys/param.h>
 #endif
 
-#if defined(__linux)
-/* Do some Linux-specific autodetection. */
+#if defined(__linux) || defined(__FreeBSD_kernel__) || defined(__GNU__)
+/* Do some Linux, kFreeBSD or GNU/Hurd specific autodetection. */
 #include <libcork/config/linux.h>
 
 #elif defined(__APPLE__) && defined(__MACH__)

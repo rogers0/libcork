@@ -1,6 +1,6 @@
 /* -*- coding: utf-8 -*-
  * ----------------------------------------------------------------------
- * Copyright © 2011-2014, RedJack, LLC.
+ * Copyright © 2011, libcork authors
  * All rights reserved.
  *
  * Please see the COPYING file in this distribution for license details.
@@ -338,12 +338,12 @@ START_TEST(test_hash)
       /* little 32 */ 0xba6bd213,
       /*    big 32 */ 0x29d175e5,
       /* little 64 */ 0xac7d28cc,
-      /*    big 64 */ 0x74bde19d);
+      /*    big 64 */ 0xac7d28cc);
     test_big_hash_buf(BUF, LEN-1,
-      /* little 32 */ 0x6f02ef30550c7d68, 0x550c7d68550c7d68,
-      /*    big 32 */ 0x6f02ef30550c7d68, 0x550c7d68550c7d68,
-      /* little 64 */ 0xac7d28cc74bde19d, 0x9a128231f9bd4d82,
-      /*    big 64 */ 0xac7d28cc74bde19d, 0x9a128231f9bd4d82);
+      /* little 32 */ 0x6f02ef30550c7d68LL, 0x550c7d68550c7d68LL,
+      /*    big 32 */ 0x6f02ef30550c7d68LL, 0x550c7d68550c7d68LL,
+      /* little 64 */ 0xac7d28cc74bde19dLL, 0x9a128231f9bd4d82LL,
+      /*    big 64 */ 0xac7d28cc74bde19dLL, 0x9a128231f9bd4d82LL);
 
     /* with the NUL terminator */
     test_stable_hash_buf(BUF, LEN, 0x586fce33);
@@ -351,12 +351,12 @@ START_TEST(test_hash)
       /* little 32 */ 0x586fce33,
       /*    big 32 */ 0xe31d1ce0,
       /* little 64 */ 0xc3812fdf,
-      /*    big 64 */ 0x4d18f852);
+      /*    big 64 */ 0xc3812fdf);
     test_big_hash_buf(BUF, LEN,
-      /* little 32 */ 0x98c2b52b29ab177c, 0x29ab177c29ab177c,
-      /*    big 32 */ 0x98c2b52b29ab177c, 0x29ab177c29ab177c,
-      /* little 64 */ 0xc3812fdf4d18f852, 0xc81a9057aa737aec,
-      /*    big 64 */ 0xc3812fdf4d18f852, 0xc81a9057aa737aec);
+      /* little 32 */ 0x98c2b52b29ab177cLL, 0x29ab177c29ab177cLL,
+      /*    big 32 */ 0x98c2b52b29ab177cLL, 0x29ab177c29ab177cLL,
+      /* little 64 */ 0xc3812fdf4d18f852LL, 0xc81a9057aa737aecLL,
+      /*    big 64 */ 0xc3812fdf4d18f852LL, 0xc81a9057aa737aecLL);
 
     /* without the NUL terminator */
     test_stable_hash_buf(LONG_BUF, LONG_LEN-1, 0x5caacc30);
@@ -364,12 +364,12 @@ START_TEST(test_hash)
       /* little 32 */ 0x5caacc30,
       /*    big 32 */ 0x88f94165,
       /* little 64 */ 0xcbdc2092,
-      /*    big 64 */ 0x03578c96);
+      /*    big 64 */ 0x5935f90a);
     test_big_hash_buf(LONG_BUF, LONG_LEN-1,
-      /* little 32 */ 0x4240d5134fb7793c, 0xee7e281c799f335a,
-      /*    big 32 */ 0xab564a5e029c92a4, 0x0bd80c741093400f,
-      /* little 64 */ 0xcbdc20928fa72e9c, 0x48de52d2c680420e,
-      /*    big 64 */ 0x5935f90a03578c96, 0x163e514fff9c30a8);
+      /* little 32 */ 0x4240d5134fb7793cLL, 0xee7e281c799f335aLL,
+      /*    big 32 */ 0xab564a5e029c92a4LL, 0x0bd80c741093400fLL,
+      /* little 64 */ 0xcbdc20928fa72e9cLL, 0x48de52d2c680420eLL,
+      /*    big 64 */ 0x5935f90a03578c96LL, 0x163e514fff9c30a8LL);
 
     /* with the NUL terminator */
     test_stable_hash_buf(LONG_BUF, LONG_LEN, 0x5e37d33d);
@@ -377,26 +377,26 @@ START_TEST(test_hash)
       /* little 32 */ 0x5e37d33d,
       /*    big 32 */ 0x4977421a,
       /* little 64 */ 0xe89ec005,
-      /*    big 64 */ 0x8c919559);
+      /*    big 64 */ 0xf00a12ab);
     test_big_hash_buf(LONG_BUF, LONG_LEN,
-      /* little 32 */ 0x63bcdcd0c2615146, 0x8e7fd7aaece3cab6,
-      /*    big 32 */ 0x250b47cda3fc07fd, 0x840c4bb606aafbd0,
-      /* little 64 */ 0xe89ec0054becb434, 0x826391b83f0b4d3e,
-      /*    big 64 */ 0xf00a12ab8c919559, 0x684ecf4973c66eac);
+      /* little 32 */ 0x63bcdcd0c2615146LL, 0x8e7fd7aaece3cab6LL,
+      /*    big 32 */ 0x250b47cda3fc07fdLL, 0x840c4bb606aafbd0LL,
+      /* little 64 */ 0xe89ec0054becb434LL, 0x826391b83f0b4d3eLL,
+      /*    big 64 */ 0xf00a12ab8c919559LL, 0x684ecf4973c66eacLL);
 
     test_stable_hash_var(stable_val32, 0x6bb65380);
     test_hash_var(val32,
       /* little 32 */ 0x6bb65380,
       /*    big 32 */ 0x6bb65380,
       /* little 64 */ 0x061fecc8,
-      /*    big 64 */ 0x7e1b3998);
+      /*    big 64 */ 0x5b3f7a70);
 
     test_stable_hash_var(stable_val64, 0x4d5c4063);
     test_hash_var(val64,
       /* little 32 */ 0x4d5c4063,
       /*    big 32 */ 0xbaeee6e9,
       /* little 64 */ 0xb119ee69,
-      /*    big 64 */ 0x267305fb);
+      /*    big 64 */ 0x2304b12d);
 }
 END_TEST
 
@@ -927,7 +927,7 @@ START_TEST(test_u128_add)
     test_one_u128_add(0, 0, 0, 0, "0");
     test_one_u128_add(0, 1, 0, 1, "2");
     test_one_u128_add(0, 1, 0, 0xffffffff, "4294967296");
-    test_one_u128_add(0, 1, 0xffffffffffffffff, 0xffffffffffffffff, "0");
+    test_one_u128_add(0, 1, 0xffffffffffffffffLL, 0xffffffffffffffffLL, "0");
 }
 END_TEST
 
