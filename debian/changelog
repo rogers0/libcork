@@ -1,3 +1,24 @@
+libcork (0.15.0+ds-13) unstable; urgency=medium
+
+  * debian/control and debian/copyright:
+    - Update to use my debian email.
+    - Update URL of upstream.
+  * debian/control:
+    - Move maintenance under bridges team.
+    - Bump debhelper version to 12.
+    - Bump policy version to 4.5.0 (no change).
+    - Add Rules-Requires-Root: no
+    - Move Vcs-* to salsa.
+  * debian/libcork-doc.doc-base:
+    - Move doc path to libcork-dev folder.
+  * Add debian/upstream/metadata
+  * debian/rules:
+    - Add more security hardening: -fPIC for CPPFLAGS and LDFLAGS.
+  * debian/libcorkipset1.symbols:
+    - Add Build-Depends-Package as requested by lintian.
+
+ -- Roger Shimizu <rosh@debian.org>  Tue, 19 May 2020 20:32:33 +0900
+
 libcork (0.15.0+ds-12) unstable; urgency=medium
 
   * Release to unstable.

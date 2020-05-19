@@ -1,18 +1,20 @@
 Source: libcork
+Section: libs
 Priority: optional
-Maintainer: Roger Shimizu <rogershimizu@gmail.com>
+Maintainer: Debian Bridges Team <team+bridges@tracker.debian.org>
+Uploaders: Roger Shimizu <rosh@debian.org>
 Build-Depends:
  check,
  cmake,
- debhelper (>= 10),
+ debhelper-compat (= 12),
  pkg-config,
  python3-cram,
  python3-sphinx
-Standards-Version: 4.1.1
-Section: libs
-Homepage: https://libcork.readthedocs.io
-Vcs-Git: https://github.com/rogers0/libcork.git
-Vcs-Browser: https://github.com/rogers0/libcork
+Standards-Version: 4.5.0
+Rules-Requires-Root: no
+Homepage: https://libcork.io
+Vcs-Git: https://salsa.debian.org/bridges-team/libcork.git
+Vcs-Browser: https://salsa.debian.org/bridges-team/libcork
 
 Package: libcork-dev
 Section: libdevel

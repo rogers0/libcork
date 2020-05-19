@@ -3,7 +3,7 @@ Upstream-Name: libcork
 Upstream-Contact: Douglas Creager <dcreager@dcreager.net>
                   John Zachary <jzachary@jzachary.net>
                   Greg Virgin <greg.virgin@redjack.com>
-Source: https://github.com/redjack/libcork
+Source: https://github.com/dcreager/libcork
 Files-Excluded:
  .buzzy
  .travis
@@ -16,11 +16,11 @@ Copyright: 2009-2015, RedJack, LLC.
 License: BSD-3-clause
 
 Files: debian/*
-Copyright: 2016 Roger Shimizu <rogershimizu@gmail.com>
+Copyright: 2016-2020 Roger Shimizu <rosh@debian.org>
 License: GPL-2+
 
 Files: debian/patches/*
-Copyright: 2016 Roger Shimizu <rogershimizu@gmail.com>
+Copyright: 2016-2020 Roger Shimizu <rosh@debian.org>
 License: BSD-3-clause
 
 License: BSD-3-clause
